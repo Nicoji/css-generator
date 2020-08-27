@@ -1,0 +1,16 @@
+.selector {
+    border: 1px solid red;
+    padding: 20px;
+}
+
+.output {
+    border: 1px solid red;
+}
+
+.element {
+    width: 60%;
+    height: 60%;
+    background-color: antiquewhite;
+    margin: auto;
+}
+
