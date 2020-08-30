@@ -11,7 +11,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-5 selector">
+            <div class="col-4 selector">
                 <form class="">
                     <div class="d-flex justify-content-between mb-3">
                         <label for="">Horizontal position</label>
@@ -49,13 +49,28 @@
                     </div>
                     <input type="range" id="spread" class="form-control-range" min="-200" max="200" onchange="spreadValue()"> <br>
                     
+                    <div class="d-flex justify-content-between mb-3">
+                        <label for="color">Shadow color</label>
+                            <input type="color" id="color" class="form-control col-4 mr-2" onchange="colorValue()"> 
+                    </div>
+
+                    <div class="d-flex justify-content-around mb-3 mt-4">
+                        <div>
+                            <input type="radio" id="outline" name="position" value="outline" onchange="isChecked()" checked>
+                            <label for="outline">Outline</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="inset" name="position" value="inset" onchange="isChecked()">
+                            <label for="inset">Inset</label>
+                        </div>
+                    </div>
                 </form>
             </div>
 
-            <div class="col-7 output">
+            <div class="col-8 output">
                 <div class="element mt-5">
                     <div class="result text-center pt-5">
-                        box-shadow: <span class="horizontalResult">15</span>px <span class="verticalResult">10</span>px <span class="blurResult">5</span>px <span class="spreadResult">9</span>px 
+                        box-shadow: <span class="horizontalResult">15</span>px <span class="verticalResult">10</span>px <span class="blurResult">5</span>px <span class="spreadResult">9</span>px <span class="colorResult">#00000</span> <span class="position"></span> 
                     </div>
                 </div>
             </div>
