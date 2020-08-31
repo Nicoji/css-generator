@@ -3,10 +3,12 @@ const verticalRange = document.querySelector('#vertical');
 const blurRange = document.querySelector('#blur');
 const spreadRange = document.querySelector('#spread');
 const color = document.querySelector('#color');
+const opacity = document.querySelector('#opacity');
 const horizontalInput = document.querySelector('#horizontalNumber');
 const verticalInput = document.querySelector('#verticalNumber');
 const blurInput = document.querySelector('#blurNumber');
 const spreadInput = document.querySelector('#spreadNumber');
+const opacityInput = document.querySelector('#opacityNumber');
 const horizontalResult = document.querySelector('.horizontalResult');
 const verticalResult = document.querySelector('.verticalResult');
 const blurResult = document.querySelector('.blurResult');
@@ -33,7 +35,7 @@ const verticalValue = () => {
 
 const blurValue = () => {
     blurInput.value = blurRange.value;
-    blurResult.textContent = blurRange.value;
+    blurResult.textContent = blurRange.value; 
     box.style.boxShadow = horizontalRange.value +"px " + verticalRange.value + "px " + blurRange.value + "px " + spreadRange.value + "px " + color.value + " " + position;
 }
 
@@ -41,6 +43,11 @@ const spreadValue = () => {
     spreadInput.value = spreadRange.value;
     spreadResult.textContent = spreadRange.value;
     box.style.boxShadow = horizontalRange.value +"px " + verticalRange.value + "px " + blurRange.value + "px " + spreadRange.value + "px " + color.value + " " + position;
+}
+
+const opacityValue = () => {
+    opacityInput.value = opacity.value;
+
 }
 
 const colorValue = () => {

@@ -10,7 +10,15 @@
 .element {
     width: 70%;
     height: 60%;
-    background-color: antiquewhite;
+    background-color: #faebd7;
     margin: auto;
 }
 
+.nav {
+    background-color: blue;
+    border-bottom: 1px solid black;
+}
+
+.nav-item {
+    cursor: pointer;
+}
