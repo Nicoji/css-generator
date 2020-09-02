@@ -1,8 +1,11 @@
+const output = document.querySelector('.output');
 const horizontalRange = document.querySelector('#horizontal');
 const verticalRange = document.querySelector('#vertical');
 const blurRange = document.querySelector('#blur');
 const spreadRange = document.querySelector('#spread');
 const color = document.querySelector('#color');
+const boxColor = document.querySelector('#boxColor');
+const bgColor = document.querySelector('#bgColor');
 const opacity = document.querySelector('#opacity');
 const horizontalInput = document.querySelector('#horizontalNumber');
 const verticalInput = document.querySelector('#verticalNumber');
@@ -66,3 +69,13 @@ const isChecked = () => {
     box.style.boxShadow = horizontalRange.value +"px " + verticalRange.value + "px " + blurRange.value + "px " + spreadRange.value + "px " + color.value + " " + position;
 }
 
+const boxColorValue = () => {
+    box.style.background = boxColor.value;
+}
+
+const bgColorValue = () => {
+    output.style.background = bgColor.value
+}
+
+box.style.background = boxColor.value;
+    
